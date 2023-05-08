@@ -1,3 +1,6 @@
+@use "Tools/Variables.scss";
+@import-normalize;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  width: 100%;
+
+  &>.layout {
+    margin-top: Variables.$headerHeightSmall;
+
+    @media #{Variables.$mq-670} {
+      margin-top: Variables.$headerHeightLarge;
+    }
+  }
 }

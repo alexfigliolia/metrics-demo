@@ -1,0 +1,16 @@
+@use "Tools/Variables.scss";
+
+.route-loader {
+	position: fixed;
+	top: Variables.$headerHeightSmall;
+	left: 0;
+	height: calc(100vh - Variables.$headerHeightSmall);
+	width: 100%;
+	@include Variables.center;
+	background: rgba(#fff, 0.5);
+
+	@media #{Variables.$mq-670} {
+		top: Variables.$headerHeightLarge;
+		height: calc(100vh - Variables.$headerHeightLarge);
+	}
+}

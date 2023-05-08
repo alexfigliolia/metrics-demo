@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Component, Fragment, Suspense } from "react";
+import { RouterProvider } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Header } from "Components/Header";
+import { Menu } from "Components/Menu";
+import { RouteLoader } from "Components/RouteLoader";
+import { Routing } from "Routing";
+
+export class App extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Menu />
+        <div className="App">
+          <Header />
+          <div className="layout">
+            <Suspense fallback={<RouteLoader />}>
+              <RouterProvider router={Routing} />
+            </Suspense>
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
 }
-
-export default App;

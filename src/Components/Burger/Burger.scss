@@ -1,0 +1,114 @@
+@use "Tools/Variables.scss";
+
+.burger {
+	height: 50px;
+	width: 50px;
+	@include Variables.center;
+	justify-content: flex-end;
+	cursor: pointer;
+	background-color: transparent;
+	box-shadow: 0;
+	border: none;
+	padding: 0;
+	outline: none;
+
+	&:focus-visible>div {
+		border: 1.5px solid rgb(65, 147, 255);
+		box-shadow: 0px 0px 5px rgb(65, 147, 255);
+	}
+
+	&>div {
+		border: 1.5px solid transparent;
+		box-sizing: border-box;
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		@include Variables.center;
+		position: relative;
+
+		&>svg {
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			height: 36px;
+			width: 36px;
+			fill: transparent;
+			transform: rotate(-90deg);
+
+			&>circle {
+				stroke: url(#linearGradient);
+				stroke-width: 2px;
+				stroke-dasharray: 110;
+				stroke-dashoffset: 110;
+				transition-duration: 0.75s;
+				stroke-linecap: round;
+			}
+		}
+
+		&>div {
+			width: 25px;
+			height: 20px;
+			@include Variables.center;
+			position: relative;
+			transition-duration: 0.3s;
+			transition-delay: 0.5s;
+
+			&>.bar {
+				width: 100%;
+				height: 2.5px;
+				left: 0;
+				position: absolute;
+				border-radius: 1.25px;
+				@include Variables.gradient;
+				transition-duration: 0.3s;
+				transition-delay: 0.5s;
+
+				&.top {
+					top: 0;
+				}
+
+				&.middle {
+					top: 8.5px;
+				}
+
+				&.bottom {
+					bottom: 0;
+					transform-origin: 0% 50%;
+				}
+			}
+		}
+	}
+}
+
+.burger.open {
+	&>div {
+		&>svg>circle {
+			stroke-dashoffset: 0;
+			transition-delay: 0.25s;
+		}
+
+		&>div {
+			transition-delay: 0.25s;
+			transform: scale(0.8);
+
+			&>.bar {
+				transition-delay: 0s;
+
+				&.top {
+					transition-delay: 0.25s;
+					transform: translateY(8.5px) rotate(-45deg);
+				}
+
+				&.middle {
+					transform: rotate(45deg);
+					transition-delay: 0.25s;
+				}
+
+				&.bottom {
+					transform: scaleX(0);
+					transition-delay: 0s;
+				}
+			}
+		}
+	}
+}

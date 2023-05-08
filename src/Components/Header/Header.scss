@@ -1,0 +1,36 @@
+@use "Tools/Variables.scss";
+
+.main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: Variables.$headerHeightSmall;
+	@include Variables.center;
+	@include Variables.headerShadow;
+
+	@media #{Variables.$mq-670} {
+		height: Variables.$headerHeightLarge;
+	}
+
+	&>div {
+		width: calc(100% - 20px);
+		@include Variables.center;
+		justify-content: space-between;
+
+		&>h1 {
+			@include Variables.gradient;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 900;
+		}
+
+		@media #{Variables.$mq-670} {
+			width: calc(100% - 40px);
+
+			&>.burger {
+				transform: scale(1.5) translateX(-7.5px);
+			}
+		}
+	}
+}
