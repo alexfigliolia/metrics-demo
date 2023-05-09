@@ -13,8 +13,8 @@ export class SVGCircle extends Component<Props> {
         <circle r={radius} cx="50%" cy="50%" />
         <defs>
           <linearGradient id="linearGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#FF4B2B" />
-            <stop offset="100%" stop-color="#FF416C" />
+            <stop offset="0%" stopColor="#FF4B2B" />
+            <stop offset="100%" stopColor="#FF416C" />
           </linearGradient>
         </defs>
       </svg>
