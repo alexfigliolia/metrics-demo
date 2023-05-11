@@ -35,6 +35,9 @@
       ],
       "Routing/*": [
         "Routing/*"
+      ],
+      "State/*": [
+        "State/*"
       ]
     }
   },

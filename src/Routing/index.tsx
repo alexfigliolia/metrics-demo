@@ -1,8 +1,6 @@
 import type { To } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
-
-import { routeChange } from "Actions/Navigation";
-import { Store } from "Tools/Store";
+import { NavigationState } from "State/Navigation";
 
 import { AboutRoute } from "./About";
 import { ContactRoute } from "./Contact";
@@ -14,13 +12,18 @@ export const Routing = createBrowserRouter([
   ContactRoute,
 ]);
 
-Store.dispatch(routeChange(Routing.state.location.pathname));
+void NavigationState.update(state => {
+  state.route = Routing.state.location.pathname;
+});
 
 const { navigate } = Routing;
 
 (Routing as any).navigate = (to: To | null, opts?: any) => {
   void navigate(to, opts);
   if (to !== null) {
-    Store.dispatch(routeChange(to));
+    void NavigationState.update(state => {
+      state.route = to;
+      state.menuOpen = false;
+    });
   }
 };

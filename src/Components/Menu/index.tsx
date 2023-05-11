@@ -1,8 +1,7 @@
 import { Component } from "react";
-import { connect } from "react-redux";
+import { connectToNavigation, type NavigationState } from "State/Navigation";
 
 import { Link } from "Components/Link";
-import type { IReduxState } from "Reducers/index";
 
 import "./Menu.scss";
 
@@ -25,9 +24,9 @@ class MenuComponent extends Component<Props> {
   }
 }
 
-const mSTP = ({ Navigation }: IReduxState) => {
+const selection = (state: typeof NavigationState) => {
   return {
-    menuOpen: Navigation.get("menuOpen"),
+    menuOpen: state.get("menuOpen"),
   };
 };
 
@@ -35,4 +34,4 @@ interface Props {
   menuOpen: boolean;
 }
 
-export const Menu = connect(mSTP)(MenuComponent);
+export const Menu = connectToNavigation(selection)(MenuComponent);

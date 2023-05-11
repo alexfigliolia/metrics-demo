@@ -51,6 +51,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": 0,
     "eslint-comments/no-unlimited-disable": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-unnecessary-type-constraint": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-unsafe-call": 0,
     "@typescript-eslint/no-unused-vars": 0,

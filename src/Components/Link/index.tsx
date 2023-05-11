@@ -1,15 +1,16 @@
 import type { MouseEvent } from "react";
 import { Component } from "react";
-import { connect } from "react-redux";
+import type { To } from "react-router";
+import type { NavigationState } from "State/Navigation";
+import { connectToNavigation } from "State/Navigation";
 
-import type { IReduxState } from "Reducers/index";
 import { Routing } from "Routing";
 
 class LinkComponent extends Component<Props> {
-  shouldComponentUpdate({ to, text, active }: Props) {
+  shouldComponentUpdate({ to, text, currentRoute }: Props) {
     if (to !== this.props.to) return true;
     if (text !== this.props.text) return true;
-    if (active !== this.props.active) return true;
+    if (currentRoute !== this.props.currentRoute) return true;
     return false;
   }
 
@@ -21,17 +22,17 @@ class LinkComponent extends Component<Props> {
   }
 
   render() {
-    const { active, text, to } = this.props;
+    const { currentRoute, text, to } = this.props;
     return (
-      <div className={`link ${active ? "active" : ""}`}>
+      <div className={`link ${currentRoute === to ? "active" : ""}`}>
         <a onClick={this.navigate(to)}>{text}</a>
       </div>
     );
   }
 }
 
-const mSTP = ({ Navigation }: IReduxState, { to }: OwnProps) => {
-  return { active: Navigation.get("route") === to };
+const selection = (state: typeof NavigationState) => {
+  return { currentRoute: state.get("route") };
 };
 
 interface OwnProps {
@@ -40,7 +41,7 @@ interface OwnProps {
 }
 
 interface Props extends OwnProps {
-  active: boolean;
+  currentRoute: To | null;
 }
 
-export const Link = connect(mSTP)(LinkComponent);
+export const Link = connectToNavigation(selection)(LinkComponent);

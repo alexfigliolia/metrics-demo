@@ -1,22 +1,31 @@
 import { Component } from "react";
-import { connect } from "react-redux";
-import type { IReduxState } from "Reducers";
+import { connectToNavigation, NavigationState } from "State/Navigation";
 
-import { toggleMenu } from "Actions/Navigation";
 import { SVGCircle } from "Components/SVGCircle";
 
 import "./Burger.scss";
 
 class BurgerButton extends Component<Props> {
+  constructor(props: Props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+  }
+
   shouldComponentUpdate({ menuOpen }: Props) {
     return menuOpen !== this.props.menuOpen;
   }
 
+  private toggle() {
+    NavigationState.update(state => {
+      state.menuOpen = !state.menuOpen;
+    });
+  }
+
   render() {
-    const { menuOpen, toggleMenu } = this.props;
+    const { menuOpen } = this.props;
     return (
       <button
-        onClick={toggleMenu}
+        onClick={this.toggle}
         className={`burger ${menuOpen ? "open" : ""}`}>
         <div>
           <SVGCircle radius="15.5" />
@@ -31,13 +40,12 @@ class BurgerButton extends Component<Props> {
   }
 }
 
-const mSTP = ({ Navigation }: IReduxState) => {
-  return { menuOpen: Navigation.get("menuOpen") };
+const selection = (state: typeof NavigationState) => {
+  return { menuOpen: state.get("menuOpen") };
 };
 
 interface Props {
   menuOpen: boolean;
-  toggleMenu: typeof toggleMenu;
 }
 
-export const Burger = connect(mSTP, { toggleMenu })(BurgerButton);
+export const Burger = connectToNavigation(selection)(BurgerButton);
