@@ -24,7 +24,7 @@ class MenuComponent extends Component<Props> {
   }
 }
 
-const selection = (state: typeof NavigationState) => {
+const mSTP = (state: typeof NavigationState) => {
   return {
     menuOpen: state.get("menuOpen"),
   };
@@ -34,4 +34,4 @@ interface Props {
   menuOpen: boolean;
 }
 
-export const Menu = connectToNavigation(selection)(MenuComponent);
+export const Menu = connectToNavigation(mSTP)(MenuComponent);

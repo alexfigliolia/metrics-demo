@@ -40,7 +40,7 @@ class BurgerButton extends Component<Props> {
   }
 }
 
-const selection = (state: typeof NavigationState) => {
+const mSTP = (state: typeof NavigationState) => {
   return { menuOpen: state.get("menuOpen") };
 };
 
@@ -48,4 +48,4 @@ interface Props {
   menuOpen: boolean;
 }
 
-export const Burger = connectToNavigation(selection)(BurgerButton);
+export const Burger = connectToNavigation(mSTP)(BurgerButton);

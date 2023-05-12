@@ -7875,7 +7875,7 @@ react-error-overlay@^6.0.11:
 
 "react-galena@https://github.com/alexfigliolia/react-galena.git":
   version "1.0.0"
-  resolved "https://github.com/alexfigliolia/react-galena.git#bf9fe08a1c32291b2b0b0d2e221905492ca9ca8b"
+  resolved "https://github.com/alexfigliolia/react-galena.git#c183176ce70df6034e189aa89bf04f361b1a8248"
   dependencies:
     galena "https://github.com/alexfigliolia/galena.git"
 

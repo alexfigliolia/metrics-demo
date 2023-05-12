@@ -1,16 +1,15 @@
 import type { MouseEvent } from "react";
 import { Component } from "react";
-import type { To } from "react-router";
 import type { NavigationState } from "State/Navigation";
 import { connectToNavigation } from "State/Navigation";
 
 import { Routing } from "Routing";
 
 class LinkComponent extends Component<Props> {
-  shouldComponentUpdate({ to, text, currentRoute }: Props) {
+  shouldComponentUpdate({ to, text, active }: Props) {
     if (to !== this.props.to) return true;
     if (text !== this.props.text) return true;
-    if (currentRoute !== this.props.currentRoute) return true;
+    if (active !== this.props.active) return true;
     return false;
   }
 
@@ -22,17 +21,17 @@ class LinkComponent extends Component<Props> {
   }
 
   render() {
-    const { currentRoute, text, to } = this.props;
+    const { active, text, to } = this.props;
     return (
-      <div className={`link ${currentRoute === to ? "active" : ""}`}>
+      <div className={`link ${active ? "active" : ""}`}>
         <a onClick={this.navigate(to)}>{text}</a>
       </div>
     );
   }
 }
 
-const selection = (state: typeof NavigationState) => {
-  return { currentRoute: state.get("route") };
+const mSTP = (state: typeof NavigationState, { to }: OwnProps) => {
+  return { active: state.get("route") === to };
 };
 
 interface OwnProps {
@@ -41,7 +40,7 @@ interface OwnProps {
 }
 
 interface Props extends OwnProps {
-  currentRoute: To | null;
+  active: boolean;
 }
 
-export const Link = connectToNavigation(selection)(LinkComponent);
+export const Link = connectToNavigation(mSTP)(LinkComponent);
