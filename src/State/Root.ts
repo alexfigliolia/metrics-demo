@@ -1,12 +1,22 @@
-import { connectGalena } from "react-galena";
+import {
+  connectGalena,
+  createUseGalena,
+  createUseGalenaMutation,
+} from "react-galena";
+import type { State } from "galena";
 import { Galena, Logger, Profiler } from "galena";
 
-import type { NavigationState } from "./Navigation";
+import type { INavigation } from "./Navigation";
 
 export type IState = {
-  navigation: typeof NavigationState;
+  navigation: State<INavigation>;
 };
 
-export const State: Galena<IState> = new Galena([new Logger(), new Profiler()]);
+export const AppState: Galena<IState> = new Galena([
+  new Logger(),
+  new Profiler(),
+]);
 
-export const galenaConnect = connectGalena(State);
+export const galenaConnect = connectGalena(AppState);
+export const useGalena = createUseGalena(AppState);
+export const useGalenaMutation = createUseGalenaMutation(AppState);

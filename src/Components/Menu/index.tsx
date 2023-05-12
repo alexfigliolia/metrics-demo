@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { connectToNavigation, type NavigationState } from "State/Navigation";
+import type { INavigation } from "State/Navigation";
+import { connectToNavigation } from "State/Navigation";
 
 import { Link } from "Components/Link";
 
@@ -24,10 +25,8 @@ class MenuComponent extends Component<Props> {
   }
 }
 
-const mSTP = (state: typeof NavigationState) => {
-  return {
-    menuOpen: state.get("menuOpen"),
-  };
+const mSTP = (state: INavigation) => {
+  return { menuOpen: state.menuOpen };
 };
 
 interface Props {

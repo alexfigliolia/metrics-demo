@@ -1,4 +1,5 @@
 import { Component } from "react";
+import type { INavigation } from "State/Navigation";
 import { connectToNavigation, NavigationState } from "State/Navigation";
 
 import { SVGCircle } from "Components/SVGCircle";
@@ -40,8 +41,8 @@ class BurgerButton extends Component<Props> {
   }
 }
 
-const mSTP = (state: typeof NavigationState) => {
-  return { menuOpen: state.get("menuOpen") };
+const mSTP = (state: INavigation) => {
+  return { menuOpen: state.menuOpen };
 };
 
 interface Props {

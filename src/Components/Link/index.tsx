@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { Component } from "react";
-import type { NavigationState } from "State/Navigation";
+import type { INavigation } from "State/Navigation";
 import { connectToNavigation } from "State/Navigation";
 
 import { Routing } from "Routing";
@@ -30,8 +30,8 @@ class LinkComponent extends Component<Props> {
   }
 }
 
-const mSTP = (state: typeof NavigationState, { to }: OwnProps) => {
-  return { active: state.get("route") === to };
+const mSTP = (state: INavigation, { to }: OwnProps) => {
+  return { active: state.route === to };
 };
 
 interface OwnProps {
