@@ -21,23 +21,20 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "Actions/*": [
-        "Actions/*"
-      ],
       "Components/*": [
         "Components/*"
       ],
-      "Reducers/*": [
-        "Reducers/*"
-      ],
-      "Tools/*": [
-        "Tools/*"
+      "Models/*": [
+        "Models/*"
       ],
       "Routing/*": [
         "Routing/*"
       ],
       "State/*": [
         "State/*"
+      ],
+      "Tools/*": [
+        "Tools/*"
       ]
     }
   },

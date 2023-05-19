@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { Component } from "react";
-import type { INavigation } from "State/Navigation";
+import type { INavigation } from "Models/Navigation";
 import { connectToNavigation } from "State/Navigation";
 
 import { Routing } from "Routing";

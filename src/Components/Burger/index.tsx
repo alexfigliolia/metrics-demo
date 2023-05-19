@@ -1,5 +1,5 @@
 import { Component } from "react";
-import type { INavigation } from "State/Navigation";
+import type { INavigation } from "Models/Navigation";
 import { connectToNavigation, NavigationState } from "State/Navigation";
 
 import { SVGCircle } from "Components/SVGCircle";
@@ -17,9 +17,7 @@ class BurgerButton extends Component<Props> {
   }
 
   private toggle() {
-    NavigationState.update(state => {
-      state.menuOpen = !state.menuOpen;
-    });
+    NavigationState.toggleMenu();
   }
 
   render() {

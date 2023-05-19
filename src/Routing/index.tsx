@@ -12,18 +12,13 @@ export const Routing = createBrowserRouter([
   ContactRoute,
 ]);
 
-void NavigationState.update(state => {
-  state.route = Routing.state.location.pathname;
-});
+NavigationState.routeTransition(Routing.state.location.pathname);
 
 const { navigate } = Routing;
 
 (Routing as any).navigate = (to: To | null, opts?: any) => {
   void navigate(to, opts);
   if (to !== null) {
-    void NavigationState.update(state => {
-      state.route = to;
-      state.menuOpen = false;
-    });
+    NavigationState.routeTransition(to);
   }
 };

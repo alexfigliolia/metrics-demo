@@ -1,22 +1,16 @@
-import {
-  connectGalena,
-  createUseGalena,
-  createUseGalenaMutation,
-} from "react-galena";
-import type { State } from "galena";
+import { connect, createUseMutation, createUseState } from "react-galena";
+import type { Middleware } from "galena";
 import { Galena, Logger, Profiler } from "galena";
+import type { IState } from "Models";
 
-import type { INavigation } from "./Navigation";
+const middleware: Middleware[] = [];
 
-export type IState = {
-  navigation: State<INavigation>;
-};
+if (process.env.NODE_ENV === "development") {
+  middleware.push(new Logger(), new Profiler());
+}
 
-export const AppState: Galena<IState> = new Galena([
-  new Logger(),
-  new Profiler(),
-]);
+export const AppState: Galena<IState> = new Galena(middleware);
 
-export const galenaConnect = connectGalena(AppState);
-export const useGalena = createUseGalena(AppState);
-export const useGalenaMutation = createUseGalenaMutation(AppState);
+export const connectToAppState = connect(AppState);
+export const useAppState = createUseState(AppState);
+export const useAppStateMutation = createUseMutation(AppState);
