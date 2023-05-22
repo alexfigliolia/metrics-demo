@@ -16,7 +16,8 @@ NavigationState.routeTransition(Routing.state.location.pathname);
 
 const { navigate } = Routing;
 
-(Routing as any).navigate = (to: To | null, opts?: any) => {
+// @ts-ignore
+Routing.navigate = (to: To | null, opts?: any) => {
   void navigate(to, opts);
   if (to !== null) {
     NavigationState.routeTransition(to);
