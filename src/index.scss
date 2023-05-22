@@ -27,7 +27,7 @@ code {
 
     &>.Route {
       @include Variables.center;
-      min-height: 100vh;
+      min-height: calc(100vh - Variables.$headerHeightSmall);
       width: 100%;
       background-color: #fff;
       @include Variables.gradient;
@@ -35,6 +35,10 @@ code {
       -webkit-text-fill-color: transparent;
       font-weight: 900;
       font-size: 50px;
+
+      @media #{Variables.$mq-670} {
+        min-height: calc(100vh - Variables.$headerHeightLarge);
+      }
     }
   }
 }
