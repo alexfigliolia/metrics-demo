@@ -2,6 +2,6 @@ import { Component } from "react";
 
 export class Contact extends Component {
   render() {
-    return <div className="Contact">Contact</div>;
+    return <div className="Route Contact">Contact</div>;
   }
 }

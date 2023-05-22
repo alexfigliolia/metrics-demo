@@ -24,5 +24,17 @@ code {
     @media #{Variables.$mq-670} {
       margin-top: Variables.$headerHeightLarge;
     }
+
+    &>.Route {
+      @include Variables.center;
+      min-height: 100vh;
+      width: 100%;
+      background-color: #fff;
+      @include Variables.gradient;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-size: 50px;
+    }
   }
 }
