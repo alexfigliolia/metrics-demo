@@ -1,5 +1,5 @@
 import type { To } from "react-router";
-import { State } from "galena";
+import { State } from "@figliolia/galena";
 
 export class NavigationModel extends State<INavigation> {
   public routeTransition(to: To) {

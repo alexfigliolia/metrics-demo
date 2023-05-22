@@ -11,14 +11,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@figliolia/event-emitter": "^1.0.6",
-    "galena": "https://github.com/alexfigliolia/galena.git",
-    "react-galena": "https://github.com/alexfigliolia/react-galena.git",
+    "@figliolia/galena": "^2.0.0",
+    "@figliolia/react-galena": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.1",
     "react-router-dom": "^6.11.1",
-    "sass": "^1.62.1",
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
@@ -43,6 +41,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "prettier": "^2.8.8",
     "react-scripts": "5.0.1",
+    "sass": "^1.62.1",
     "typescript": "^4.4.2"
   },
   "eslintConfig": {

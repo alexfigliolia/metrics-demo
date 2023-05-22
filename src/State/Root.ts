@@ -1,6 +1,10 @@
-import { connect, createUseMutation, createUseState } from "react-galena";
-import type { Middleware } from "galena";
-import { Galena, Logger, Profiler } from "galena";
+import type { Middleware } from "@figliolia/galena";
+import { Galena, Logger, Profiler } from "@figliolia/galena";
+import {
+  connect,
+  createUseMutation,
+  createUseState,
+} from "@figliolia/react-galena";
 import type { IState } from "Models";
 
 const middleware: Middleware[] = [];

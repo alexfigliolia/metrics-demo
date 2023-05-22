@@ -1247,10 +1247,24 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
   integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
 
-"@figliolia/event-emitter@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.0.6.tgz#1ae20ac4d2d0d3dcb2919159c4c8f6921de053aa"
-  integrity sha512-Vl6no7hf3KO0UvQgynl/X2HzyHt26vX6MBYNO9uVA3/AQHraJidBYz1F55FCUXxQcmJLwM/VCLLLSANR15DZyg==
+"@figliolia/event-emitter@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.0.7.tgz#54a2dbc8628f6462b4a9c269bfffcfaf3e8b37e3"
+  integrity sha512-1OrsthsbDSbHnPMAJ+GzqUp8wZb+1mTnGQ3Mos2SbS/YHvLUvocmVWMRQ3YNYnFvFYvfcyRZTQOxz8iAQYT9LA==
+
+"@figliolia/galena@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@figliolia/galena/-/galena-2.0.0.tgz#599de933b95a3fc07e3beb3ac8d2623a61b1f012"
+  integrity sha512-xJNiOuwtRFxKCtIArI6GchBPJJW5Z8j+mXQ1ZaikEyTU1+esY+hNAg9i2+Lp2IS+IITN25O/8CM8pvthJ2mDLQ==
+  dependencies:
+    "@figliolia/event-emitter" "^1.0.7"
+
+"@figliolia/react-galena@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-2.0.1.tgz#6aecfc4204a06e93e65918285583ebd1c31495c7"
+  integrity sha512-G88tvBlo14BWAd+m0RKNuFaJjrSML81IVCDwwiopHHxSKSC6Wtn16eelL2NPWuoxSbpeMrqeV/8mgLXC2Hlqww==
+  dependencies:
+    "@figliolia/galena" "^2.0.0"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -4833,12 +4847,6 @@ functions-have-names@^1.2.2, functions-have-names@^1.2.3:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-"galena@https://github.com/alexfigliolia/galena.git":
-  version "1.0.0"
-  resolved "https://github.com/alexfigliolia/galena.git#a1447db23c1319918845c4d0e4cbffb59062f521"
-  dependencies:
-    "@figliolia/event-emitter" "^1.0.6"
-
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
@@ -7872,12 +7880,6 @@ react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
-
-"react-galena@https://github.com/alexfigliolia/react-galena.git":
-  version "1.0.0"
-  resolved "https://github.com/alexfigliolia/react-galena.git#c183176ce70df6034e189aa89bf04f361b1a8248"
-  dependencies:
-    galena "https://github.com/alexfigliolia/galena.git"
 
 react-is@^16.13.1:
   version "16.13.1"

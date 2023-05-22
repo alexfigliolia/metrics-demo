@@ -1,4 +1,8 @@
-import { connect, createUseMutation, createUseState } from "react-galena";
+import {
+  connect,
+  createUseMutation,
+  createUseState,
+} from "@figliolia/react-galena";
 import type { INavigation } from "Models/Navigation";
 import { NavigationModel } from "Models/Navigation";
 
