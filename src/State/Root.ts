@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === "development") {
   middleware.push(new Logger(), new Profiler());
 }
 
-export const AppState: Galena<IState> = new Galena(middleware);
+export const AppState = new Galena<IState>(middleware);
 
 export const connectToAppState = connect(AppState);
 export const useAppState = createUseState(AppState);
