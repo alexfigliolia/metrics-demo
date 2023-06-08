@@ -1,0 +1,53 @@
+@use "Tools/Variables.scss";
+
+.user-list {
+	margin-top: 20px;
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	&>.user {
+		width: 100%;
+		box-shadow: 0px 2.5px 5px rgba(#000, 0.2);
+		padding: 10px;
+		box-sizing: border-box;
+		font-size: 1em;
+		border-radius: 2.5px;
+		transform: translateY(50%);
+		opacity: 0;
+		transition-duration: 0.3s;
+
+		&.animate {
+			transform: translateY(0%);
+			opacity: 1;
+		}
+
+		@media #{Variables.$mq-670} {
+			width: calc(50% - 10px);
+		}
+
+		@media #{Variables.$mq-957} {
+			width: calc(33.3% - 20px);
+		}
+
+		&>.user-name {
+			@include Variables.gradient;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 900;
+		}
+
+		&>.user-details {
+			color: rgb(108, 108, 108);
+			margin-top: 15px;
+			font-size: 0.75em;
+			background-clip: initial;
+			-webkit-text-fill-color: initial;
+			font-weight: 500;
+			font-style: italic;
+		}
+	}
+}

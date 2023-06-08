@@ -1,5 +1,5 @@
 {
-  "name": "starter-kit",
+  "name": "metrics-quick-start",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prod": "serve -s build -l 4000",
     "eject": "react-scripts eject"
   },
   "dependencies": {
     "@figliolia/galena": "^2.0.0",
+    "@figliolia/metrics": "^1.0.0",
     "@figliolia/react-galena": "^2.0.1",
+    "@figliolia/react-metrics": "https://github.com/alexfigliolia/react-metrics.git",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.1",
@@ -20,7 +23,6 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -39,9 +41,11 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.8.8",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",
+    "serve": "^14.2.0",
     "typescript": "^4.4.2"
   },
   "eslintConfig": {

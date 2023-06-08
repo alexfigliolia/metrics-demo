@@ -2,6 +2,7 @@ import type { FC, MouseEvent } from "react";
 import { useNavigationState } from "State/Navigation";
 
 import { Routing } from "Routing";
+import { NavigationMetric } from "Tools/Metrics";
 
 export const Link: FC<{
   to: string;
@@ -12,6 +13,7 @@ export const Link: FC<{
   const navigate = (event: MouseEvent<HTMLAnchorElement>) => {
     event?.preventDefault();
     void Routing.navigate(to);
+    NavigationMetric.succeed();
   };
 
   return (

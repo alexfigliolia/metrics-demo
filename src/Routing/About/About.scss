@@ -1,6 +1,10 @@
-.About {
-	display: flex;
-	height: 300px;
-	width: 100%;
-	background: green;
+@use "Tools/Variables";
+
+.Route.About {
+	font-size: 50px;
+	@include Variables.center;
+	@include Variables.gradient;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 900;
 }

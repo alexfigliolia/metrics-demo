@@ -5,6 +5,8 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 1000000000000;
+	background-color: #fff;
 	height: Variables.$headerHeightSmall;
 	@include Variables.center;
 	@include Variables.headerShadow;

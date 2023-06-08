@@ -4,6 +4,7 @@
 	position: fixed;
 	top: Variables.$headerHeightSmall;
 	left: 0;
+	z-index: 10000000000000;
 	height: calc(100vh - Variables.$headerHeightSmall);
 	width: 100%;
 	@include Variables.center;

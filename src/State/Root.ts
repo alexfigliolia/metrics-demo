@@ -1,5 +1,5 @@
 import type { Middleware } from "@figliolia/galena";
-import { Galena, Logger, Profiler } from "@figliolia/galena";
+import { Galena, Profiler } from "@figliolia/galena";
 import {
   connect,
   createUseMutation,
@@ -10,7 +10,7 @@ import type { IState } from "Models";
 const middleware: Middleware[] = [];
 
 if (process.env.NODE_ENV === "development") {
-  middleware.push(new Logger(), new Profiler());
+  middleware.push(new Profiler());
 }
 
 export const AppState = new Galena<IState>(middleware);

@@ -5,11 +5,12 @@
 	top: Variables.$headerHeightSmall;
 	right: 0;
 	position: fixed;
-	height: calc(100vh - 50px);
+	height: calc(100vh - Variables.$headerHeightSmall);
 	width: 100%;
+	z-index: 1000000000;
 	@include Variables.gradient;
 	@include Variables.center;
-	transform: translateX(100%);
+	transform: translateX(110%);
 	transition-duration: 0.5s;
 	box-shadow: -5px 0px 10px rgba(#000, 0.25), -2.5px 0px 5px rgba(#000, 0.15);
 
@@ -17,6 +18,7 @@
 		top: Variables.$headerHeightLarge;
 		width: 60%;
 		max-width: 500px;
+		height: calc(100vh - Variables.$headerHeightLarge);
 	}
 
 	&>div {

@@ -27,7 +27,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["react", "simple-import-sort", "@typescript-eslint", "prettier"],
+  plugins: ["react", "simple-import-sort", "@typescript-eslint", "prettier", "unused-imports"],
   rules: {
     "radix": 0,
     "no-new": 0,
@@ -42,6 +42,7 @@ module.exports = {
     "prefer-rest-params": 0,
     "no-mixed-spaces-and-tabs": 0,
     "react/react-in-jsx-scope": "off",
+    "unused-imports/no-unused-imports-ts": 2,
     "@typescript-eslint/unbound-method": 0,
     "@typescript-eslint/no-unsafe-argument": 0,
     "@typescript-eslint/no-unsafe-return": 0,

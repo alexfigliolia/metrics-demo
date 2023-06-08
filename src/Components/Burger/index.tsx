@@ -3,6 +3,7 @@ import type { INavigation } from "Models/Navigation";
 import { connectToNavigation, NavigationState } from "State/Navigation";
 
 import { SVGCircle } from "Components/SVGCircle";
+import { NavigationMetric } from "Tools/Metrics";
 
 import "./Burger.scss";
 
@@ -17,6 +18,11 @@ class BurgerButton extends Component<Props> {
   }
 
   private toggle() {
+    if (this.props.menuOpen) {
+      NavigationMetric.fail();
+    } else {
+      NavigationMetric.start();
+    }
     NavigationState.toggleMenu();
   }
 
