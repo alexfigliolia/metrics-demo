@@ -1254,9 +1254,10 @@
   dependencies:
     "@figliolia/galena" "^2.0.0"
 
-"@figliolia/react-metrics@https://github.com/alexfigliolia/react-metrics.git":
-  version "1.0.0"
-  resolved "https://github.com/alexfigliolia/react-metrics.git#385a795fd3dabc0bb2496e100f63079b04273e8e"
+"@figliolia/react-metrics@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.2.tgz#74a8ab44a5a54da7f79891c5532b3444b31cec59"
+  integrity sha512-GovWByaQqzg29qWM9kMzlvpYntFHc/Yt8M0hIO2NxYjO04lzYGMphLELkqdNv0o3BAk0s86vDLdruZFcHnW/pA==
   dependencies:
     "@figliolia/metrics" "^1.0.0"
 

@@ -15,7 +15,7 @@
     "@figliolia/galena": "^2.0.0",
     "@figliolia/metrics": "^1.0.0",
     "@figliolia/react-galena": "^2.0.1",
-    "@figliolia/react-metrics": "https://github.com/alexfigliolia/react-metrics.git",
+    "@figliolia/react-metrics": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.1",
