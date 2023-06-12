@@ -1227,39 +1227,39 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
   integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
 
-"@figliolia/event-emitter@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.0.7.tgz#54a2dbc8628f6462b4a9c269bfffcfaf3e8b37e3"
-  integrity sha512-1OrsthsbDSbHnPMAJ+GzqUp8wZb+1mTnGQ3Mos2SbS/YHvLUvocmVWMRQ3YNYnFvFYvfcyRZTQOxz8iAQYT9LA==
+"@figliolia/event-emitter@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.0.8.tgz#5592433d97e3b250cdb691afb040e59b88d77bde"
+  integrity sha512-U0VNMaDbYgbEcPPWSOR+EwpGPx4t3DX+Y7s1EM1ubylm8pJIcYPxfKETP00OpDl8D+Lrqa0Bkmxtm+EhOFrtCA==
 
-"@figliolia/galena@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@figliolia/galena/-/galena-2.0.0.tgz#599de933b95a3fc07e3beb3ac8d2623a61b1f012"
-  integrity sha512-xJNiOuwtRFxKCtIArI6GchBPJJW5Z8j+mXQ1ZaikEyTU1+esY+hNAg9i2+Lp2IS+IITN25O/8CM8pvthJ2mDLQ==
+"@figliolia/galena@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@figliolia/galena/-/galena-2.0.9.tgz#182da6611501f7f0c0dcb12aad4e7ac3fbc93d36"
+  integrity sha512-NJY8Xh9So3Rb2JCBNix6URwxgbUQTlE2oK0Nj83bKZmKS88Zi7/TPzTRL4/znjZ6uxW+LnUoVh+a5izkEIz3EQ==
   dependencies:
-    "@figliolia/event-emitter" "^1.0.7"
+    "@figliolia/event-emitter" "^1.0.8"
 
-"@figliolia/metrics@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@figliolia/metrics/-/metrics-1.0.0.tgz#e1bcc232ea44c42a5696280faf2b6c5d1b00e9a5"
-  integrity sha512-ioP0jotzlALEkX4Zp+GTonlUPnodtln6G80iGXoRTmu8VhmdmKM2otC9TiNww7q+RXcCWcvYiSY+KBfMkm8dww==
+"@figliolia/metrics@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@figliolia/metrics/-/metrics-1.0.3.tgz#acfaa9dcfc65adb225b948fb2a92fb54a9b0e729"
+  integrity sha512-GtkHqTk0hVwnl3c2mJeQ0S0LCUcYpdJgeIVrE0FCK7Ixi50atVHiht0OsSXmM2SMnLQsm3DVXjdgpb5iKwwkpA==
   dependencies:
-    "@figliolia/event-emitter" "^1.0.7"
+    "@figliolia/event-emitter" "^1.0.8"
     beaconer "^1.0.1"
 
-"@figliolia/react-galena@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-2.0.1.tgz#6aecfc4204a06e93e65918285583ebd1c31495c7"
-  integrity sha512-G88tvBlo14BWAd+m0RKNuFaJjrSML81IVCDwwiopHHxSKSC6Wtn16eelL2NPWuoxSbpeMrqeV/8mgLXC2Hlqww==
+"@figliolia/react-galena@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-2.0.6.tgz#ba841c9abdc8e392a05793973de5f7e4558a4c67"
+  integrity sha512-70pYZtT2qDO8SfxGVNOKvvnWxwTo9leG5gnX8CAVKXXhHBMJs7c2YPoYQKdXllvekjnJAvgRHCx7KtXs5sjwOw==
   dependencies:
-    "@figliolia/galena" "^2.0.0"
+    "@figliolia/galena" "^2.0.9"
 
-"@figliolia/react-metrics@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.2.tgz#74a8ab44a5a54da7f79891c5532b3444b31cec59"
-  integrity sha512-GovWByaQqzg29qWM9kMzlvpYntFHc/Yt8M0hIO2NxYjO04lzYGMphLELkqdNv0o3BAk0s86vDLdruZFcHnW/pA==
+"@figliolia/react-metrics@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.4.tgz#fc91e276a1640ecc6acb2913d9888086db5291e9"
+  integrity sha512-Dd8wMwYbf6LQlm/QwACHTF72qwhWEHlV7IPVBbpkbX5tkmIkyqGtUAl/M0K4hDM0bMiqzVkSDlyMzyj2oSlHqg==
   dependencies:
-    "@figliolia/metrics" "^1.0.0"
+    "@figliolia/metrics" "^1.0.3"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"

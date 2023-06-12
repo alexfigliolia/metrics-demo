@@ -12,10 +12,10 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@figliolia/galena": "^2.0.0",
-    "@figliolia/metrics": "^1.0.0",
-    "@figliolia/react-galena": "^2.0.1",
-    "@figliolia/react-metrics": "^1.0.2",
+    "@figliolia/galena": "^2.0.9",
+    "@figliolia/metrics": "^1.0.3",
+    "@figliolia/react-galena": "^2.0.6",
+    "@figliolia/react-metrics": "^1.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.1",
