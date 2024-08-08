@@ -1227,39 +1227,40 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
   integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
 
-"@figliolia/event-emitter@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.0.8.tgz#5592433d97e3b250cdb691afb040e59b88d77bde"
-  integrity sha512-U0VNMaDbYgbEcPPWSOR+EwpGPx4t3DX+Y7s1EM1ubylm8pJIcYPxfKETP00OpDl8D+Lrqa0Bkmxtm+EhOFrtCA==
+"@figliolia/event-emitter@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@figliolia/event-emitter/-/event-emitter-1.1.5.tgz#0c2786da56997d518cba8e542501aeead75cb1d4"
+  integrity sha512-l7luLvIKPDgzF2dtuFd5SbO3i6fK0s1KRSmouUQddl9ZyxXpOKk/JLi0bLpLyzp+KjZMw1AUHXHT4ZYhEAICWg==
 
-"@figliolia/galena@^2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@figliolia/galena/-/galena-2.0.9.tgz#182da6611501f7f0c0dcb12aad4e7ac3fbc93d36"
-  integrity sha512-NJY8Xh9So3Rb2JCBNix6URwxgbUQTlE2oK0Nj83bKZmKS88Zi7/TPzTRL4/znjZ6uxW+LnUoVh+a5izkEIz3EQ==
+"@figliolia/galena@^2.3.2", "@figliolia/galena@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@figliolia/galena/-/galena-2.3.4.tgz#ecabea8f5286ce5c1303a3d44753f91179c1544f"
+  integrity sha512-wEImJ+ZEUN+xwZl158F3Id4wAZhEc6lGC6isUU/mdZo0KibTRj2B5pdppeo2AlzAndsUUNj5N2PbXqqed0wEkA==
   dependencies:
-    "@figliolia/event-emitter" "^1.0.8"
+    "@figliolia/event-emitter" "^1.1.5"
 
-"@figliolia/metrics@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@figliolia/metrics/-/metrics-1.0.3.tgz#acfaa9dcfc65adb225b948fb2a92fb54a9b0e729"
-  integrity sha512-GtkHqTk0hVwnl3c2mJeQ0S0LCUcYpdJgeIVrE0FCK7Ixi50atVHiht0OsSXmM2SMnLQsm3DVXjdgpb5iKwwkpA==
+"@figliolia/metrics@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@figliolia/metrics/-/metrics-1.1.1.tgz#b9ed7de71b9f3b8bf679a7221bfc4992fa133f00"
+  integrity sha512-rtI9FjX7mF0ROqffv+Y6P2nkZm0BZR2wnCRTUav/AqzkByUH/rpUfpLZBYfXF2I1A/yhbij69oJB96M4ClEMyQ==
   dependencies:
-    "@figliolia/event-emitter" "^1.0.8"
-    beaconer "^1.0.1"
+    "@figliolia/event-emitter" "^1.1.5"
+    beaconer "^1.0.2"
 
-"@figliolia/react-galena@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-2.0.6.tgz#ba841c9abdc8e392a05793973de5f7e4558a4c67"
-  integrity sha512-70pYZtT2qDO8SfxGVNOKvvnWxwTo9leG5gnX8CAVKXXhHBMJs7c2YPoYQKdXllvekjnJAvgRHCx7KtXs5sjwOw==
+"@figliolia/react-galena@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-3.2.3.tgz#0a49fb9c5b66334742b8b943171ba846b91a18e7"
+  integrity sha512-9FJD5JuxuoYtS+g+cTYPm+60qv0u99qKZw7BMuMTLUJ5hAS/pJFNyL+C49VDqG9dpHmPZKT7ytm/vfjJPLKnbA==
   dependencies:
-    "@figliolia/galena" "^2.0.9"
+    "@figliolia/galena" "^2.3.2"
 
-"@figliolia/react-metrics@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.4.tgz#fc91e276a1640ecc6acb2913d9888086db5291e9"
-  integrity sha512-Dd8wMwYbf6LQlm/QwACHTF72qwhWEHlV7IPVBbpkbX5tkmIkyqGtUAl/M0K4hDM0bMiqzVkSDlyMzyj2oSlHqg==
+"@figliolia/react-metrics@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.6.tgz#5498a6f08929b1a626fabce09217a32283037861"
+  integrity sha512-PDHcmivi6C0XTXeZXXB/vT8sLtVliN42UgBtaMAfD5Z3B4LbUilj47fX8RsqKtnN6TSZpY/fCN/gZRqdxPh2rg==
   dependencies:
-    "@figliolia/metrics" "^1.0.3"
+    "@figliolia/metrics" "^1.1.1"
+    react "^18.3.1"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -2111,13 +2112,28 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.0":
+"@types/react-dom@^18.3.0":
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.0.tgz#0cbc818755d87066ab6ca74fbedb2547d74a82b0"
+  integrity sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*":
   version "18.2.6"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.6.tgz#5cd53ee0d30ffc193b159d3516c8c8ad2f19d571"
   integrity sha512-wRZClXn//zxCFW+ye/D2qY65UsYP1Fpex2YXorHc8awoNamkMZSvBxwxdYVInsHOZZd2Ppq8isnSzJL5Mpf8OA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^18.3.3":
+  version "18.3.3"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.3.tgz#9679020895318b0915d7a3ab004d92d33375c45f"
+  integrity sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==
+  dependencies:
+    "@types/prop-types" "*"
     csstype "^3.0.2"
 
 "@types/resolve@1.17.1":
@@ -2928,10 +2944,10 @@ batch@0.6.1:
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
 
-beaconer@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/beaconer/-/beaconer-1.0.1.tgz#45a15305c00206463c02eb7b4e56d41e1492243c"
-  integrity sha512-BrHmmJjf+lxmu8rVMVKpt9V7gtbnBYLBkDjOQ381Z0S65BnTWjR0zHF6iDTocKkx3duefLND9Wkt244VOeVklg==
+beaconer@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/beaconer/-/beaconer-1.0.2.tgz#734ebc80f90acf1ac79ec281363e92d561508e0a"
+  integrity sha512-8ZHw9lgpD4Z9IThWgfKIjUnS1cl2wopoa+qvz5k2pYvHxAcTyD6jy1NuzN1Jwb37wMHja3eykllLBwKhSn0QtA==
 
 bfj@^7.0.2:
   version "7.0.2"
@@ -7944,13 +7960,13 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
+  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "^0.23.2"
 
 react-error-overlay@^6.0.11:
   version "6.0.11"
@@ -8047,10 +8063,10 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+react@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -8375,10 +8391,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+scheduler@^0.23.2:
+  version "0.23.2"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.2.tgz#414ba64a3b282892e944cf2108ecc078d115cdc3"
+  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
   dependencies:
     loose-envify "^1.1.0"
 
