@@ -1,6 +1,6 @@
 import type { To } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
-import { PageLoadPlugin } from "@figliolia/metrics";
+import { PageLoadPlugin } from "@ui-perf/metrics";
 import { NavigationState } from "State/Navigation";
 
 import { AboutRoute } from "./About";

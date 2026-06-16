@@ -1,5 +1,5 @@
 import { Component, Fragment } from "react";
-import { StopMetric } from "@figliolia/react-metrics";
+import { StopMetric } from "@ui-perf/react-metrics";
 
 import { HomeMetric } from "../Home";
 
