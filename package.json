@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@figliolia/galena": "^2.3.4",
-    "@figliolia/metrics": "^1.1.1",
     "@figliolia/react-galena": "^3.2.3",
-    "@figliolia/react-metrics": "^1.0.6",
+    "@ui-perf/metrics": "^2.0.0",
+    "@ui-perf/react-metrics": "^1.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.11.1",

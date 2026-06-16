@@ -6,7 +6,7 @@ import {
   PageLoadPlugin,
   ProcessingQueue,
   ReporterPlugin,
-} from "@figliolia/metrics";
+} from "@ui-perf/metrics";
 
 const Queue = new ProcessingQueue("/analytics");
 

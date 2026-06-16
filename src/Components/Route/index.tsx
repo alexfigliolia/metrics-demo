@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Component, Fragment } from "react";
-import { StartMetric } from "@figliolia/react-metrics";
+import { StartMetric } from "@ui-perf/react-metrics";
 
 import type { RouteMetric } from "Tools/types";
 

@@ -1239,28 +1239,12 @@
   dependencies:
     "@figliolia/event-emitter" "^1.1.5"
 
-"@figliolia/metrics@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@figliolia/metrics/-/metrics-1.1.1.tgz#b9ed7de71b9f3b8bf679a7221bfc4992fa133f00"
-  integrity sha512-rtI9FjX7mF0ROqffv+Y6P2nkZm0BZR2wnCRTUav/AqzkByUH/rpUfpLZBYfXF2I1A/yhbij69oJB96M4ClEMyQ==
-  dependencies:
-    "@figliolia/event-emitter" "^1.1.5"
-    beaconer "^1.0.2"
-
 "@figliolia/react-galena@^3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@figliolia/react-galena/-/react-galena-3.2.3.tgz#0a49fb9c5b66334742b8b943171ba846b91a18e7"
   integrity sha512-9FJD5JuxuoYtS+g+cTYPm+60qv0u99qKZw7BMuMTLUJ5hAS/pJFNyL+C49VDqG9dpHmPZKT7ytm/vfjJPLKnbA==
   dependencies:
     "@figliolia/galena" "^2.3.2"
-
-"@figliolia/react-metrics@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@figliolia/react-metrics/-/react-metrics-1.0.6.tgz#5498a6f08929b1a626fabce09217a32283037861"
-  integrity sha512-PDHcmivi6C0XTXeZXXB/vT8sLtVliN42UgBtaMAfD5Z3B4LbUilj47fX8RsqKtnN6TSZpY/fCN/gZRqdxPh2rg==
-  dependencies:
-    "@figliolia/metrics" "^1.1.1"
-    react "^18.3.1"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -2321,6 +2305,19 @@
   dependencies:
     "@typescript-eslint/types" "5.59.5"
     eslint-visitor-keys "^3.3.0"
+
+"@ui-perf/metrics@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ui-perf/metrics/-/metrics-2.0.0.tgz#9dec9829b5a42f1c26e00859dd92afa1a8e89f4f"
+  integrity sha512-/qskVDRiUmoeIHRwGx+Wbe36/hNO8jh/E7PDhkWeYTqHLS9gCc/t/8LB7F7GALPjpjp+2Y+C9XSD98jWLFrZKw==
+  dependencies:
+    "@figliolia/event-emitter" "^1.1.5"
+    beaconer "^1.0.2"
+
+"@ui-perf/react-metrics@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ui-perf/react-metrics/-/react-metrics-1.1.1.tgz#97fb77444e08f03a5d40f9623b30b03b97be5b30"
+  integrity sha512-+wPR+wYaV8zAaOcHSKbvgwVEVmzs/E+W2X9ZyYrxCDqr9QQPYiOHytlFhTQ9ofWvHvdJMSzcU6/c2rbk/qwYIQ==
 
 "@webassemblyjs/ast@1.11.6", "@webassemblyjs/ast@^1.11.5":
   version "1.11.6"

@@ -8,7 +8,7 @@ import type {
   PageLoadPlugin,
   PluginTable,
   ReporterPlugin,
-} from "@figliolia/metrics";
+} from "@ui-perf/metrics";
 
 export type WithLogger<T extends PluginTable> = T & {
   logger: LoggerPlugin;
